@@ -16,12 +16,8 @@ module.exports = {
 	        loader: 'vue-loader',
 	        options: {
 	        	loaders:{
-	        		less:[{
-	        			loader:'less-loader'
-	        		}],
-	        		css:[{
-	        			loader:'css-loader'
-	        		}]
+					'less':'vue-style-loader!css-loader!less-loader',
+					'scss':'vue-style-loader!css-loader!sass-loader'
 	        	}
 	        }
 	      },

@@ -12,7 +12,7 @@
 	}
 </script>
 
-<style>
+<style lang="less">
 	body{
 		background-color: gray;
 

@@ -12,8 +12,9 @@ app.use(devMiddleWare(compile,{
     noInfo: true,
     status: { color: true }
 }))
+
 app.use(hotMiddleWare(compile))
 
 console.log('> starting dev server ...')
 app.listen(port)
-console.log('> dev server listen on port '+port)
+console.log('> dev server listen on port http://localhost:'+port)
