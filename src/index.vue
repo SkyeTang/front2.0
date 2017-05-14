@@ -5,21 +5,22 @@
 </template>
 
 <script type="text/javascript">
+	import Vue from 'vue'
+	import t from './test.vue'
+	const te = Vue.extend(t)
 	export default {
-		ready(){
+		mounted(){
+			let overlay = new te({
+				el:document.createElement('div')
+			})
+			console.log(overlay)
 			console.log('恭喜你，进入了Vue2.0的时代.')
+			console.log(te)
+			document.body.append(overlay.$el)
 		}
 	}
 </script>
 
 <style lang="less">
-	body{
-		background-color: gray;
 
-		.head{
-			width: 100%;
-			height: 30px;
-			background-color: blue;
-		}
-	}
 </style>
