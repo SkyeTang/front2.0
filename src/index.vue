@@ -3,7 +3,8 @@
 		<div class="head">
 			恭喜你，进入了vue2.0时代 ~
 		</div>
-		<editor></editor>
+		<editor @input="getContent"></editor>
+		{{content}}
 	</div>
 </template>
 
@@ -28,6 +29,16 @@
 		components:{
 			editor
 		},
+		data(){
+		    return {
+		        content:''
+			}
+		},
+		methods:{
+            getContent(val){
+                this.content = val
+			}
+		}
 	}
 </script>
 
