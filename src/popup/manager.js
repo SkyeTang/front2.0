@@ -21,6 +21,7 @@ const manager = {
             this.closeMask()
         }
         this.changeMaskIndex()
+
     },
     showMask(instance){
         this.mask = new Mask({

@@ -1,6 +1,6 @@
 <template>
-    <div class="dialog" v-if="show">hello
-        <button @click="closed">关闭</button>
+    <div class="dialog" v-show="show">hello
+        <button @click="hide">关闭</button>
     </div>
 </template>
 
@@ -9,8 +9,8 @@ import popMixin from './popup/index'
 export  default {
     mixins:[popMixin],
     methods:{
-        closed(){
-            this.show = false
+        hide(){
+            this.$emit('hide')
         }
     }
 }

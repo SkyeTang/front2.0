@@ -33,7 +33,6 @@ export default {
     methods:{
         setIndex(){
             const dom = this.$el
-            console.log(dom)
             if (dom) dom.style.zIndex = this.zIndex
         },
         resetIndex(){

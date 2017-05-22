@@ -1,6 +1,6 @@
 <template>
     <div>
-        <t :show="show"></t>
+        <t :show="show" @hide="hide"></t>
         <button @click="toTest">测试按钮</button>
     </div>
 </template>
@@ -17,6 +17,9 @@
         methods:{
             toTest(){
                 this.show=true
+            },
+            hide(){
+                this.show =false
             }
         }
     }
