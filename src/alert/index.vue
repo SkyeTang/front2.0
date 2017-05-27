@@ -1,5 +1,6 @@
 <template>
-    <div class="dialog" v-show="show">hello
+    <div class="dialog" v-show="show">
+        <slot>{{message}}</slot>
         <button @click="hide">关闭</button>
     </div>
 </template>
@@ -8,6 +9,12 @@
 import popMixin from './popup/index'
 export  default {
     mixins:[popMixin],
+    props:{
+        message:{
+            type:String,
+            default:''
+        }
+    },
     methods:{
         hide(){
             this.$emit('hide')

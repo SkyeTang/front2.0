@@ -26,7 +26,7 @@ export default {
         this.setIndex()
     },
     mounted(){
-        if(this.open){
+        if(this.show){
             Manager.show(this)
         }
     },
