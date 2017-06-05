@@ -2,9 +2,9 @@
 <s-table :fixed-head="true" height="100px">
     <s-thead slot="head">
         <s-tr>
-            <s-th>1</s-th>
-            <s-th>2</s-th>
-            <s-th>3</s-th>
+            <s-th width="30%">1</s-th>
+            <s-th width="50%">2</s-th>
+            <s-th width="20%">3</s-th>
         </s-tr>
     </s-thead>
     <s-tbody>

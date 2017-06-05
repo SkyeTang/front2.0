@@ -10,6 +10,7 @@ export default{
     created(){
         this.isHead = true
     },
+
 }
 </script>
 
