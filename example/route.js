@@ -7,11 +7,11 @@ Vue.use(Router)
 const router = new Router({
     mode: 'hash',
     routes: [
-        { path: '/index', component: Table },
+        {path: '/index', component: Table},
         {path: '/Table', component: Table},
         {path: '/TreeTable', component: TreeTable},
-        { path: '*', redirect: '/index' }
-        ]
+        {path: '*', redirect: '/index'}
+    ]
 })
 
 router.beforeEach((to, from, next) => {
