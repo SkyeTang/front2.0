@@ -6,6 +6,7 @@
 
 <script>
     export default{
+        name:'richEditor',
         props: {
             id: {
                 type: String,

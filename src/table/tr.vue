@@ -12,7 +12,7 @@
 
 <script>
     export default{
-        componentName: 'tr',
+        name: 'STr',
         props: {
             value: ''
         },
@@ -24,7 +24,7 @@
         computed: {
             rootTable(){
                 let parent = this.$parent
-                while (parent && parent.$options.componentName !== 'table') {
+                while (parent && parent.$options.name !== 'table') {
                     parent = parent.$parent
                 }
                 return parent

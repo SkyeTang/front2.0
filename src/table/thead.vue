@@ -6,7 +6,7 @@
 
 <script>
 export default{
-    componentName:'thead',
+    name:'SThead',
     created(){
         this.isHead = true
     },

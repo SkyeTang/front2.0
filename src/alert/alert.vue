@@ -6,8 +6,9 @@
 </template>
 
 <script>
-import popMixin from './popup/index'
+import popMixin from '../popup'
 export  default {
+    name:'alert',
     mixins:[popMixin],
     props:{
         message:{

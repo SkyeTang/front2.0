@@ -5,10 +5,10 @@ var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
-module.exports = merge(baseConf, {
+module.exports = {
     devtool: '#cheap-module-eval-source-map',
     entry:{
-        app:'./example/main.js'
+        app:path.resolve(__dirname,'../example/main.js')
     },
     output:{
         path:path.resolve(__dirname,'../dist'),
@@ -63,7 +63,7 @@ module.exports = merge(baseConf, {
         // https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'index.html',
+            template: path.resolve(__dirname, '../example/index.html'),
             inject: true
         }),
 
@@ -79,4 +79,4 @@ module.exports = merge(baseConf, {
         //友好的错误提示
         new FriendlyErrorsPlugin()
     ]
-})
+}

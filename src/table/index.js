@@ -1,0 +1,6 @@
+export {default as table} from './table.vue'
+export {default as thead} from './thead.vue'
+export {default as tbody} from './tbody.vue'
+export {default as tr} from './tr.vue'
+export {default as th} from './th.vue'
+export {default as td} from './td.vue'

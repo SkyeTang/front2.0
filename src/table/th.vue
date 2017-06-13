@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        componentName:'th',
+        name:'STh',
     }
 </script>
 

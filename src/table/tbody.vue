@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    componentName:'tbody',
+    name:'STbody',
     created(){
         this.isBody = true
     },

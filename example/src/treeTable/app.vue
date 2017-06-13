@@ -3,11 +3,7 @@
 </template>
 
 <script>
-    import TreeTable from './treeTable/treeTable.vue'
     export default {
-        components: {
-            TreeTable
-        },
         data(){
             return {
                 data: [

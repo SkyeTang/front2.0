@@ -5,7 +5,9 @@
 </template>
 
 <script>
-
+export default{
+    name:'STd'
+}
 </script>
 
 <style lang="less">
