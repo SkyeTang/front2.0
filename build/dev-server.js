@@ -20,7 +20,10 @@ app.use(express.static(__dirname + "/"))
 app.use(history({
     index:'index.html',
     rewrites: [
-        { from: /\/index/, to: '/index.html'}
+        {
+            from: /\/soccer/,
+            to: '/index.html'
+        }
     ]
 }))
 
