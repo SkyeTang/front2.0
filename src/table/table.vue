@@ -73,7 +73,7 @@
             checkAll(){
                 this.isCheckAll = !this.isCheckAll
                 this.trChildren.forEach(item => {
-                    if (item.$options.name === 'tr') {
+                    if (item.$options.name === 'STr') {
                         if (this.isCheckAll) {
                             item.isSelect = true
                             item.select()
@@ -86,7 +86,7 @@
             },
             getColumns(){
                 let c = this.$children[0]
-                while (c && c.$options.name !== 'tr') {
+                while (c && c.$options.name !== 'STr') {
                     c = c.$children[0]
                 }
                 c.$children.forEach(item => {
@@ -108,7 +108,7 @@
                 handler(){
                     let c = true
                     this.trChildren.forEach(item => {
-                        if (item.$options.name === 'tr') {
+                        if (item.$options.name === 'STr') {
                             if(item.isSelect === false){
                                 c = false
                             }

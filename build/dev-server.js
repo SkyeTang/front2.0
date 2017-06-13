@@ -3,6 +3,7 @@ var express = require('express')
 var webpackConf = require('./webpack.dev.conf.js')
 var devMiddleWare = require('webpack-dev-middleware')
 var hotMiddleWare = require('webpack-hot-middleware')
+var history = require('connect-history-api-fallback')
 
 var compile = webpack(webpackConf)
 var app  = express()
@@ -14,6 +15,14 @@ app.use(devMiddleWare(compile,{
 }))
 
 app.use(hotMiddleWare(compile))
+
+app.use(express.static(__dirname + "/"))
+app.use(history({
+    index:'index.html',
+    rewrites: [
+        { from: /\/index/, to: '/index.html'}
+    ]
+}))
 
 console.log('> starting dev server ...')
 app.listen(port)

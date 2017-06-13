@@ -8,8 +8,8 @@ const router = new Router({
     mode: 'hash',
     routes: [
         {path: '/index', component: Table},
-        {path: '/Table', component: Table},
-        {path: '/TreeTable', component: TreeTable},
+        {path: '/table', component: Table},
+        {path: '/treeTable', component: TreeTable},
         {path: '*', redirect: '/index'}
     ]
 })

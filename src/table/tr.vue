@@ -24,7 +24,7 @@
         computed: {
             rootTable(){
                 let parent = this.$parent
-                while (parent && parent.$options.name !== 'table') {
+                while (parent && parent.$options.name !== 'STable') {
                     parent = parent.$parent
                 }
                 return parent

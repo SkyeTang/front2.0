@@ -1,12 +1,16 @@
 import alert from './alert'
 import editor from './editor'
-import {table} from './table'
+import {table,tbody,thead,tr,th,td} from './table'
 import treeTable from './treeTable'
-console.log(table)
 const components = {
     alert,
     editor,
     table,
+    tbody,
+    thead,
+    tr,
+    th,
+    td,
     treeTable
 }
 

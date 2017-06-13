@@ -2,7 +2,7 @@ var webpack = require('webpack')
 var path = require('path')
 module.exports = {
 	entry:{
-		app:'./src/main.js'
+		app:'./example/main.js'
 	},
 	output:{
 		path:path.resolve(__dirname,'../dist'),
@@ -11,6 +11,9 @@ module.exports = {
 	},
 	resolve:{
 		extensions: ['.js', '.vue', '.json'],
+		alias:{
+			'vue$': 'vue/dist/vue.esm.js',
+		}
 	},
 	module: {
 	    rules: [
