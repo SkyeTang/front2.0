@@ -11,7 +11,7 @@
                         name: 'heello',
                         age: '243',
                         sex: 'boy',
-                        children:[
+                        children: [
                             {
                                 name: '2234',
                                 age: '243',

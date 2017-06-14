@@ -19,7 +19,6 @@
             </s-tbody>
         </s-table>
     </div>
-
 </template>
 
 <script type="text/javascript">
