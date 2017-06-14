@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node build/dev-server.js",
-    "build": "webpack --config build/webpack.dev.conf.js"
+    "build": "webpack --config build/webpack.prod.conf.js"
   },
   "author": "skye",
   "license": "ISC",
@@ -30,6 +30,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "node-sass": "^4.5.2",
+    "opn": "^5.1.0",
     "sass-loader": "^6.0.5",
     "url-loader": "^0.5.8",
     "vue-loader": "^11.1.4",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "vue": "^2.3.3",
+    "vue-i18n": "^7.0.3",
     "vue-router": "^2.5.3"
   }
 }
