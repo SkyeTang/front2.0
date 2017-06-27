@@ -7,7 +7,10 @@ Vue.use(Router)
 const router = new Router({
     mode: 'hash',
     routes: [
-        {path: '/index', component: Table},
+        {
+            path: '/index',
+            component: resolve => require(['./src/table/app.vue'], resolve)
+        },
         {path: '/table', component: Table},
         {path: '/treeTable', component: TreeTable},
         {path: '*', redirect: '/index'}

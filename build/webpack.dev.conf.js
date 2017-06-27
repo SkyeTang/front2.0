@@ -15,11 +15,13 @@ module.exports = merge(baseConf, {
     plugins: [
 
         // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
+        // 热重载
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
 
 
         // https://github.com/ampedandwired/html-webpack-plugin
+        // 模板静态文件
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname,'../example/index.html'),
