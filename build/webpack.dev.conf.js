@@ -19,7 +19,12 @@ module.exports = merge(baseConf, {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
 
-
+        //压缩js
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        }),
         // https://github.com/ampedandwired/html-webpack-plugin
         // 模板静态文件
         new HtmlWebpackPlugin({
