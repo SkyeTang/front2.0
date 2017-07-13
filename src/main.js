@@ -1,3 +1,4 @@
+import './style/base.less'
 import alert from './alert'
 import editor from './editor'
 import {table,tbody,thead,tr,th,td} from './table'
