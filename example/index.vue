@@ -5,7 +5,7 @@
         </div>
         <div class="main">
             <div class="sidebar">
-                test
+                test <i class="iconfont icon-appreciate "></i>
             </div>
             <div class="content">
                 <router-view></router-view>
@@ -24,7 +24,7 @@
 </script>
 
 <style lang="less">
-    @import './assets/css/reset.css';
+    @import '../src/style/index.less';
     .header{
         position: fixed;
         display: flex;
