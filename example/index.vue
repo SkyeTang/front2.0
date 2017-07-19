@@ -1,11 +1,16 @@
 <template>
     <div>
         <div class="header">
-            SKUI
+            <div class="logo">SK-UI</div>
         </div>
         <div class="main">
             <div class="sidebar">
-                test <i class="iconfont icon-appreciate "></i>
+                <ul class="menu">
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                </ul>
             </div>
             <div class="content">
                 <router-view></router-view>
@@ -33,7 +38,12 @@
         height: 60px;
         width: 100%;
         padding: 10px 60px;
-        box-shadow: 0 0 1px rgba(0,0,0,.25);
+        box-shadow: @shadow-up;
+
+    .logo{
+            color: @primary-color;
+            font-size: 22px;
+        }
     }
     .main{
         margin-top: 61px;
@@ -41,10 +51,24 @@
     .sidebar{
         position: fixed;
         width: 260px;
+        height: calc(~"100% - 61px");
         top:61px;
         left: 0;
-        padding:10px 20px 30px 60px;
+        overflow-y: auto;
+        box-shadow: @shadow-card;
 
+        .menu{
+            padding:20px 0;
+
+            li{
+                padding: 10px 30px;
+                font-size:16px;
+
+                &:hover{
+                     background-color: @background-color-select-hover;
+                 }
+            }
+        }
     }
     .content{
         margin-left: 260px;

@@ -1,13 +1,12 @@
 <template>
     <div>
         <button @click="changeLang">切换语言</button>
-        <div>{{$t('name')}}</div>
         <s-table :fixed-head="true" height="100px">
             <s-thead slot="head">
                 <s-tr>
-                    <s-th width="30%">1</s-th>
-                    <s-th width="50%">2</s-th>
-                    <s-th width="20%">3</s-th>
+                    <s-th width="30%">{{$t('type')}}</s-th>
+                    <s-th width="50%">{{$t('default')}}</s-th>
+                    <s-th width="20%">{{$t('description')}}</s-th>
                 </s-tr>
             </s-thead>
             <s-tbody>
