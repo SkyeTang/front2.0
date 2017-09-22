@@ -1,5 +1,7 @@
 <template>
     <div>
+        <a href="tel:18011488858">18011488858</a>
+
         <button @click="changeLang">切换语言</button>
         <s-table :fixed-head="true" height="100px">
             <s-thead slot="head">
