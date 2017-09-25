@@ -19,6 +19,7 @@ const install = (Vue) => {
     Object.keys(components).forEach(function(key){
         Vue.component(components[key].name,components[key])
     })
+    console.log(2);
 }
 
 if(typeof window !== 'undefined' && window.Vue) install(window.Vue)
